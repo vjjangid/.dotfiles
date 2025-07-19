@@ -17,3 +17,6 @@ opt.autoindent = true
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 opt.clipboard:append("unnamedplus")
+
+opt.ignorecase = true
+opt.splitbelow = true
