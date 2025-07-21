@@ -16,6 +16,10 @@ return {
  		  "[\\/]obj[\\/]",    -- obj folder on both Linux and Windows
          "[\\/]%.vs[\\/]",
          "[\\/]bin[\\/]",
+         "[\\/]Binaries[\\/]",
+         "[\\/]binaries[\\/]",
+         "[\\/]docs[\\/]",
+         "[\\/]build[\\/]",
 		},
       },
     })
