@@ -23,6 +23,7 @@ return {
       {
         {"<leader>t", group = "tabs"},
         {"<leader>s", group = "split"},
+        {"<leader>e", group = "File Explorer"},
       })
     end
   }
