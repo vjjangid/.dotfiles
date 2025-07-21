@@ -6,8 +6,20 @@ return {
     { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' }
   }, 
   config = function()
-    require("telescope").load_extension("fzf")
+    local telescope = require("telescope")
+    telescope.load_extension("fzf")
 
-    vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files, {desc = "find files into root directory"})
+    telescope.setup ({
+      defaults = {
+        file_ignore_patterns = {
+		  "[\\/]%.git[\\/]",  -- .git on both Linux and Windows
+ 		  "[\\/]obj[\\/]",    -- obj folder on both Linux and Windows
+         "[\\/]%.vs[\\/]",
+         "[\\/]bin[\\/]",
+		},
+      },
+    })
+
+    vim.keymap.set("n", "<space>fd", require("telescope.builtin").find_files, { desc = "Find files in root directory" })
   end
 }
