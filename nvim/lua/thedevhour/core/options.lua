@@ -1,4 +1,3 @@
-print("configuring options")
 --options
 local opt = vim.opt
 
