@@ -7,6 +7,8 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				cs = { "csharpier" }, -- Ensure C# files use the 'csharpier' formatter
+				go = { "gofumpt", "goimports-reviser" },
+				py = { "ruff" },
 			},
 			formatters = {
 				csharpier = {
