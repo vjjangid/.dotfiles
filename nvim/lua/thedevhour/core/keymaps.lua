@@ -20,3 +20,6 @@ keymap.set("n", "<C-h>", "<C-w>h", { desc = "move to left window" })
 keymap.set("n", "<C-j>", "<C-w>j", { desc = "move to down window" })
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "move to up window" })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "move to right window" })
+
+keymap.set("i", "<A-CR>", "<Esc>O", { desc = "Insert newline above without leaving insert mode" })
+keymap.set("i", "<S-CR>", "<Esc>o", { desc = "Insert newline below without leaving insert mode" })
