@@ -7,8 +7,8 @@ opt.wrap = false
 opt.cursorline = true
 
 -- tabs and indentations
-opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.tabstop = 2    -- 2 spaces on tab press
+opt.shiftwidth = 4 -- 2 spaces for indent width
+opt.tabstop = 4 -- 2 spaces on tab press
 opt.expandtab = true
 opt.autoindent = true
 
@@ -19,3 +19,6 @@ opt.clipboard:append("unnamedplus")
 
 opt.ignorecase = true
 opt.splitbelow = true
+
+--center the cursor
+opt.scrolloff = 999
